@@ -31,7 +31,7 @@ fastify.route({
 /* POST para enviar datos */
 fastify.post("/registro", require("./src/registro.js")); 
 fastify.post("/login", require("./src/login.js")); 
-fastify.post("/usuario/check", require("./src/check.js"));
+fastify.get("/usuario/check", require("./src/check.js"));
 // Crea una ruta en Fastify para obtener todos los usuarios
 fastify.get('/usuarios', async (request, reply) => {
     try {
